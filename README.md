@@ -11,7 +11,7 @@ Foram desenvolvidos os seguintes tópicos:
 
 
 
-[Neste link](https://drive.google.com/file/d/1crVPOVl6ok2HeYjh3fjQuGQn2lDZVHrn/view?usp=sharing), seguem os slides apresentados como o roteiro utilizado para o desenvolvimento do projeto da nossa sessão.
+[Neste link](https://github.com/rpeleias/personapi_digital_innovation_one), segue o repositorio usado como base do projeto.
 
 
 
