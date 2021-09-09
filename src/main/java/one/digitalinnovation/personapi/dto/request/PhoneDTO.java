@@ -11,6 +11,8 @@ import javax.persistence.Enumerated;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
+//clone de objeto phone feito para fazer a transferencia de dados DIO=DATA TRANSFER OBJECT
+//responsavel por receber os dados de entrada e fazer as validacoes
 @Data
 @Builder
 @AllArgsConstructor

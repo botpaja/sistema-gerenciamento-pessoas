@@ -11,6 +11,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.List;
 
+//clone de objeto person feito para fazer a transferencia de dados DIO=DATA TRANSFER OBJECT
+//responsavel por receber os dados de entrada e fazer as validacoes
 @Data
 @Builder
 @AllArgsConstructor

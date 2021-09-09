@@ -11,6 +11,7 @@ public interface PersonMapper {
 
     PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
 
+    //usado para mudar o birthDate de String para dateFormat
     @Mapping(target = "birthDate", source = "birthDate", dateFormat = "dd-MM-yyyy")
     Person toModel(PersonDTO personDTO);
 
