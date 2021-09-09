@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+//Classe para separar as regras de negocio do Controller
 @Service
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
@@ -21,6 +22,7 @@ public class PersonService {
 
     private final PersonMapper personMapper = PersonMapper.INSTANCE;
 
+    //metodo para criar pessoa
     public MessageResponseDTO createPerson(PersonDTO personDTO) {
         Person personToSave = personMapper.toModel(personDTO);
 
@@ -28,6 +30,7 @@ public class PersonService {
         return createMessageResponse(savedPerson.getId(), "Created person with ID ");
     }
 
+    //metodo para listar pessoas
     public List<PersonDTO> listAll() {
         List<Person> allPeople = personRepository.findAll();
         return allPeople.stream()
@@ -41,6 +44,7 @@ public class PersonService {
         return personMapper.toDTO(person);
     }
 
+    //metodo para deletar pessoa pelo id
     public void delete(Long id) throws PersonNotFoundException {
         verifyIfExists(id);
         personRepository.deleteById(id);
